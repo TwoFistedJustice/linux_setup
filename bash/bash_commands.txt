@@ -1,0 +1,11 @@
+
+#change all 'normal' (text files) files below here to have LF line endings
+find . -type f -print0 | xargs -0 dos2unix
+
+
+
+# rotate monitor 2 to landscape
+xrandr --output DP-2-3 --rotate normal
+
+# rotate monitor 2 to to top is pointed left
+xrandr --output DP-2-3 --rotate left
