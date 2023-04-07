@@ -1,10 +1,32 @@
-Download OS
+# Installation of Linux
 
-make bootable flash drive
+### Download OS
+**[Kubuntu](https://kubuntu.org/getkubuntu/)**
+
+### Make bootable flash drive
+ - see /basics/usb_drives.md
 
 
-partition drive
 
+### Partition drive
+- see /basics/partitioning.md
 
-install OS
+### Install OS
+Plug in the bootable drive and follow the prompts
 
+### Restore
+- restore any configuration files
+- home directory
+- long term storage files (personal photos, docs, etc)
+
+### Install preferred applications
+- **[Chromium](https://www.chromium.org/getting-involved/download-chromium/)**
+- **[Firefox](https://www.mozilla.org/en-US/firefox/new/)**
+- **[Webstorm](https://www.jetbrains.com/webstorm/)**
+- **[Docker](https://www.docker.com/)**
+- **[DIY Layout Creator](http://diy-fever.com/software/diylc/)**
+- **[Git](https://git-scm.com/)**
+- **[Steam](https://store.steampowered.com/about/)**
+- **[NVM](https://github.com/nvm-sh/nvm#installing-and-updating)**
+- **[]()**
+- **Libreoffice Calc** - Muon 
