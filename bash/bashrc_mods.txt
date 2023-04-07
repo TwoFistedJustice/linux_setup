@@ -1,0 +1,2 @@
+# truncates path shown in terminal
+PROMPT_DIRTRIM=1
