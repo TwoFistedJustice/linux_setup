@@ -37,9 +37,9 @@ alias now='date +"  %-I:%M %P%n%A %-m/%d/%y"'
 
 #env variable shortcuts
 #commented out, find out what current variables are called and modify
-#Samsung 23"
+#Left Hand Monitor
 alias mon2="xrandr --output DP-2-2 --rotate"
-#HP 19"
+#Right Hand Monitor
 alias mon3="xrandr --output DP-2-3 --rotate"
 
 
