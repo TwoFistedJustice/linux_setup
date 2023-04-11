@@ -30,3 +30,11 @@ Plug in the bootable drive and follow the prompts
 - **[NVM](https://github.com/nvm-sh/nvm#installing-and-updating)**
 - **[]()**
 - **Libreoffice Calc** - Muon 
+
+
+
+# STill to do
+Which config files to grab
+How to restore my personal files to tardis?
+How to re-set up deja dup
+how to re set up btrfs timeshifts or whatever they are called

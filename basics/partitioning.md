@@ -1,3 +1,12 @@
+# Setting up a new SSD
+Boot from a Gparted or similar USB stick
+
+First you will need to set up a `GPT` partition table for the whole drive.
+
+
+
+
+
 #Drive Partitions 250GB
 
 | Designation | Type           | Mount Point | Size /
