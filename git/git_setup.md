@@ -21,3 +21,6 @@ hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 type = cat-file -t
 dump = cat-file -p
 
+
+global git config located at 
+/home/$USER/.gitconfig
