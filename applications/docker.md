@@ -7,20 +7,19 @@
 
 # Confusions:
 - Docker Desktop and Docker Engine are different applications. For a dev environment you may only need Desktop.
-- Do I need to install gnome-terminal on Kubuntu? - **?????????????????????????????**
-
-
-
+- Do I need to install gnome-terminal on Kubuntu? - **NO**
+- I can get docker to start, but docker.service appears to not even exist. 
 
 #Steps as given by Docker Docs
 Premise: The Docker installation docs for Linux are TERRIBLE.
 
-Install gnome-terminal - ?? Necessary ???  
-
-
 KVM supported
 QEMU 5.2+
 systemd
+
+
+# Docker Compose
+It is not necessary to install docker-compose if you install Docker Desktop. DD comes with "docker compose" built in. Note the only difference in the syntax is that you can now omit the dash.
 
 
 #Actual Way to Install Docker Desktop:
@@ -39,59 +38,22 @@ sudo apt update -y
 
 ## What you do NOT need to do:
 - install gnome-terminal
-- install Docker Engine
+- install Docker Engine (if it seems to search forever for Engine, it means you need to start the docker service)
 
 
 #Questions to Answer
 - how do I check which services are running?
-- is qemu running all the time?
+`systemctl --type=service`
+
+- is qemu running all the time? - **YES**
 - how do I turn it off?
-- The docs imply that DD runs in the background at startup, DOES IT???
-
-
-
-
-
-
-
-
-#What happened:
-Without performing any of the pre-requisite actions such as installing gnome-terminal I ran
-`sudo apt-get update` and from within Downloads `sudo apt-get install ./docker-desktop-4.18.0-amd64.deb`
-
-The result:
-
-> Reading package lists... Done  
-Building dependency tree... Done  
-Reading state information... Done
-Note, selecting 'docker-desktop' instead of './docker-desktop-4.18.0-amd64.deb'\
-Some packages could not be installed. This may mean that you have\
-requested an impossible situation or if you are using the unstable\
-distribution that some required packages have not yet been created\
-or been moved out of Incoming.\
-The following information may help to resolve the situation:\
-> 
-> The following packages have unmet dependencies:\
-docker-desktop : Depends: docker-ce-cli but it is not installable\
-E: Unable to correct problems, you have held broken packages.
-
-Nothing was installed
-
-Now install `qemu-system` from Muon
-
-
-
-
+-The docs imply that DD runs in the background at startup, DOES IT??? **not yet**
 
 
 -[tab1](https://www.kubuntuforums.net/forum/general/miscellaneous/miscellaneous-aa/664300-installing-docker-compose-on-kubuntu-or-any-ubuntu)
 -[tab2](https://docs.docker.com/desktop/install/linux-install/)
 -[tab3](https://docs.docker.com/desktop/install/ubuntu/)
 -[tab4](https://docs.docker.com/desktop/faqs/linuxfaqs/#how-do-i-enable-file-sharing)
-
-
-
-
 
 
 
@@ -114,6 +76,7 @@ This will put a drag on your system and should be started and stopped manually a
 
 #Bash File for starting and stopping Docker and required services
 # start qemu-service
+# start docker service
 
 
 
