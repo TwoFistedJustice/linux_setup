@@ -1,7 +1,7 @@
 # Install from Muon
-- Timeshift
+
 - Filezilla
-- 
+- Finger
 
 # Install From Bash
 - `sudo apt install bat` - like 'cat' but with color coding
@@ -16,4 +16,5 @@
 - Yakuake - the drop down bash window. Mostly it gets in the way.
 - Stacer - System dashboard. Nice idea but way too buggy. The memory meter gets wonky fast.
 - Vim - Yes it's very efficient. But I prefer Nano because it has a visible interface.
+- Timeshift - automatic backup program. It works, for a while till it doesn't. 
 
