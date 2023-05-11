@@ -1,11 +1,17 @@
+# Final
+Use KGPG to create a new key and set it as default. Now Docker works again.
+Until it doesn't.
+
+[Stack Exchange where I wrote a pretty good answer on this subject](https://unix.stackexchange.com/questions/53912/i-try-to-add-passwords-to-the-pass-password-manager-but-my-attempts-fail-with)
+
 
 
 KDE Wallet keeps prompting me for a password. It is NOT the same as my system password and appears to have been made by me last year using my email address.
 
 It asks for the secret used to create the OpenPGP key, which naturally I have forgotten.
 
-I still have my old SSD with 20.04 installed and working. Can I retrieve anything from that? 
-
+I still have my old SSD with 20.04 installed and working. Can I retrieve anything from that? - NO
+ 
 
 I can delete the wallet in wallet manager.
 

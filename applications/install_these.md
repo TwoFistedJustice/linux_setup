@@ -1,3 +1,9 @@
+# Install from Muon
+- Timeshift
+- Filezilla
+- 
+
+# Install From Bash
 - `sudo apt install bat` - like 'cat' but with color coding
 
 
