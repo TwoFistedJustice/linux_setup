@@ -7,3 +7,10 @@ The problem seems to be that I imported both:
 
 I need to re-run a backup which excludes the problem key and the problem docker settings.
 
+My next backup /home should exclude:
+
+.docker
+
+
+Did I pull in my docker settings from before?
+Look on old SSD is it there?
