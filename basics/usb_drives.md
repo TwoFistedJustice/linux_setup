@@ -8,7 +8,7 @@ Rule #1 - USB drives in linux are secure because they suck by design.
 - `fdisk -l` - lists drives - difficult to read
 
 
-# Make a USB bootable
+# Bootable USB
 
 Download **[Etcher](https://www.balena.io/etcher#download-etcher)**
 - Etcher is an [Appimage](https://docs.appimage.org/introduction/quickstart.html#ref-quickstart) so you have to make it executable by going to properties and in the permissions tab selecting "is executable"
