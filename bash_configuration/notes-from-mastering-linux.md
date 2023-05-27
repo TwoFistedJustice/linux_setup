@@ -24,6 +24,14 @@ p64
 $CDPATH
 For quick directory changes to frequently used dirs.
 How to set $CDPATH:
+Folders I should do:
+repos
+downloads
+hoo
+tardis
+
+
+
 
 P67
 Set the variable PROMPT_COMMAND to run some command to be executed before displaying the prompt

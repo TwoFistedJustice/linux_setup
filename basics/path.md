@@ -1,6 +1,14 @@
+# $PATH
+## PATH basics
+There may be more than one path. Root may have one, and individual users may have one.
+
+Don't mess with the path until you know how it works in detail.
+
+`sbin` is usually reserved for system root owned commands
+
+
+
 # Path Operations
-
-
 `pwd`  See current working directory 
 
 
@@ -21,6 +29,19 @@ they get read by the shell. If you're not sure where to put it, `~/.bashrc` is a
 
 
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+
+
+### What's at the path locations
+- /usr/local/sbin: -- docker
+- /usr/local/bin: -- empty
+- /usr/sbin: - lots and lots of binaries
+- /usr/bin: - lots and lots of binaries
+- /sbin: - lots and lots of binaries
+- /bin :- lots and lots of binaries
+- /usr/games: - steam
+- /usr/local/games: - emptry
+- /snap/bin - cups drivers
 
 
 ## Locations where PATH is stored/set in my Kubuntu 20.04
