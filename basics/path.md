@@ -1,4 +1,9 @@
 # $PATH
+
+The base path for a fresh install of kubuntu 22.04 is:\
+`/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin`
+
+
 ## PATH basics
 There may be more than one path. Root may have one, and individual users may have one.
 
