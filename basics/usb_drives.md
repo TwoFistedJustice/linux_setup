@@ -8,7 +8,7 @@ Rule #1 - USB drives in linux are secure because they suck by design.
 - `fdisk -l` - lists drives - difficult to read
 
 
-# Bootable USB
+# [Bootable USB](https://linuxhint.com/create_bootable_linux_usb_flash_drive/)
 
 Download **[Etcher](https://www.balena.io/etcher#download-etcher)**
 - Etcher is an [Appimage](https://docs.appimage.org/introduction/quickstart.html#ref-quickstart) so you have to make it executable by going to properties and in the permissions tab selecting "is executable"
@@ -16,3 +16,16 @@ Download **[Etcher](https://www.balena.io/etcher#download-etcher)**
 
 
 
+dd bs=4M if=/home/hoo/Downloads/kali-linux-2023.1a-installer-purple-amd64.iso of=/dev/sdc1 status=progress oflag=sync
+
+
+
+dd bs=4M if=/home/hoo/Downloads/THE_FILE.iso of=/dev/sdX status=progress oflag=sync
+
+
+
+
+
+# Security
+Use GtkHash (GUI) to check the check sum on the .iso
+The green check mark means it's good. No check mark means it's bad.
