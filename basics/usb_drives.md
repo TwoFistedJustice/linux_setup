@@ -17,11 +17,8 @@ Download **[Etcher](https://www.balena.io/etcher#download-etcher)**
 
 
 dd bs=4M if=/home/hoo/Downloads/kali-linux-2023.1a-installer-purple-amd64.iso of=/dev/sdc1 status=progress oflag=sync
-
-
-
 dd bs=4M if=/home/hoo/Downloads/THE_FILE.iso of=/dev/sdX status=progress oflag=sync
-
+- This made transferred the iso to a USB stick but it wasn't bootable
 
 
 

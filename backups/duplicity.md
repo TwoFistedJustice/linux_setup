@@ -22,7 +22,7 @@ The value C+P'd from dconf-editor
 
 
 
-
+$TRASH
 '/home/hoo/.local/share/Trash',
 '/home/hoo/.snapshots', 
 '/home/hoo/.cache',
@@ -31,7 +31,7 @@ The value C+P'd from dconf-editor
 '/home/hoo/.prisma',
 '/home/hoo/.nedit',
 '/home/hoo/.opencity',
-'/home/hoo/Downloads',
+
 '/home/hoo/Templates',
 '/home/hoo/snap', 
 '/home/hoo/.config/autostart-scripts',
