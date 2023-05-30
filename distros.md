@@ -75,12 +75,34 @@ Mostly KDE with some Gnome tossed in randomly, for example Emacs AND Kate
 For terminal it has: Xfce Terminal, Konsole, Yakuake, and XTerm
 
 
+## Ubuntu - vanilla
+System usage: 2.4gb RAM
+Pretty but seems less configurable than Kubuntu, or at least not as user friendly.
+Package manager looks to be what sits behind Muon abstraction layer. Muon seems to be a search engine on top of Ubuntu's software center.
+It has a workspace slider rather than an "start" menu.
+Power off button is harder to find, it's in the battery tray icon.
+It has the option of using ZSF which is similar to btrfs, but not better unless you need infinite data storage capacity. But they don't make drives with infinite capacity yet.
+I don't see any advantage over Kubuntu, but I do see some drawbacks.
+
+
 ## Gentoo
 System usage: **1.3gb** RAM
 Can't seem to activate bluetooth
 Lower RAM usage may because various features are turned off. System Monitor shows a lot less than Kubuntu.
 It's Portage package manager that the website brags about is not accessible. Or it's command line only via `emerge`.
 No evident advantages over Kubuntu, several drawbacks.
+
+## Mint: Cinnamon
+System usage: **1.3gb** RAM
+The basic Ubuntu disk partitioner SUCKS!!!! It really seems to try to prevent you from changing anything.
+Trying to install Mint after straight Ubuntu was actually difficult unless I chose the automated default.
+Default file system: ext4
+Uses Synaptic package manager (Muon is easier to use). Synaptic's interface looks like it came out of Windows 3.1
+No obvious support for keyboard shortcuts. There's an app to make them, but you can't actually add a custom key stroke to the shortcut.
+
+
+
+
 
 ## GhostBSD
 Pretty spartan but seems to have everything important.
