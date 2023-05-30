@@ -2,6 +2,7 @@
 
 - Filezilla
 - Finger
+- Ranger (A super slim file manager that lets you navigate using arrow keys and shows you contents of files. )
 
 # Install From Bash
 - `sudo apt install bat` - like 'cat' but with color coding
