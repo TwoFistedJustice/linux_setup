@@ -18,17 +18,26 @@ I created a shortcut in the start menu for this.
 
 # Installing:
 Do it from Muon
-The installation creates a new Group called "Boinc"
+The installation creates a new Group called "boinc"
 
 After installation you have to [add $USER to the Boinc Group](https://boinc.berkeley.edu/wiki/Stop_or_start_BOINC_daemon_after_boot)
 
-`sudo usermod -a -G Boinc $USER`
+`sudo usermod -a -G boinc $USER`
 
 Then you must log off and log on to make it all work.
 
 # Getting Work to Do
 Most of the projects seem to be either not-maintained or poorly maintained.
 Except for [World Community Grid](https://www.worldcommunitygrid.org/) which is owned and maintained by IBM.
+
+1. Start the Boinc-client. You have to type out the whole path. You can't cd into the directory and execute the file from there.
+ - ```shell
+   /etc/init.d/boinc-client start
+ - ```
+2. Start the Boinc Manager AFTER starting the client.
+3. Tools > Add project
+
+
 
 You must create an account at each project with email and password. Then provide that login to Boinc Manager.
 
