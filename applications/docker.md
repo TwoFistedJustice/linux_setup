@@ -5,6 +5,12 @@
 - [Docker docs: Installing on Ubuntu](https://docs.docker.com/desktop/install/ubuntu/)
 
 
+### To Download Docker
+ - be signed in
+ - it looks like a download button but it's really a breadcrumb. Follow the breadcrumbs.
+
+
+
 # Confusions:
 - Docker Desktop and Docker Engine are different applications. For a dev environment you may only need Desktop.
 - Do I need to install gnome-terminal on Kubuntu? - **NO**
@@ -61,7 +67,7 @@ sudo apt update -y
 Docker Desktop requires KVM support
 The KVM module should load automatically but if it does not it can be loaded manually with:
 
-`modprobe kvm`
+`sudo modprobe -v kvm`
 
 
 # Packages to install via Muon
