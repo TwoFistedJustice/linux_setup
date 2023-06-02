@@ -3,6 +3,29 @@ Boot from a Gparted or similar USB stick
 
 First you will need to set up a `GPT` partition table for the whole drive.
 
+
+## LVM
+- Should be enabled.
+Logical Volume Management makes it possible to change partition sizes on the fly.
+
+
+
+
+## About [Swap Space](https://opensource.com/article/18/9/swap-space-linux-systems) and [Swap Partitions](https://www.makeuseof.com/tag/swap-partition/)
+Swap files are more flexible but add unnecessary complexity and are slower than swap partitions.
+Swap files NOT recommended for BTRFS as it prevents snapshots from working. (can't snapshot a subv containing a swap space) 
+**Partitions should be preferred.**
+
+"swappiness" is the % of RAM left unused when a swap space kicks in. So if swappiness is set to 60, it means that when RAM utilization
+reaches 40% the system begins using swap space. This can lead to system lag and slow shutdowns since the swap space has to be emptied.
+It also wears out SSDs faster.
+
+Linux defaults to a swappiness of 60.
+Set swappiness to 20.
+```shell
+sudo sysctl vm.swappiness=20
+```
+
 #Drive Partitions 250GB
 
 | Designation | Type           | Mount Point | Size /
@@ -72,6 +95,10 @@ user@box:~$ sudo chown -Rv $USER ./New_Directory/
 https://askubuntu.com/questions/1276281/does-ubuntu-installer-preserve-btrfs-home-subvolume-while-installing-to-the
 
 manually delete individual contents of @ to avoid losing stuff you want to keep.
+
+
+
+
 
 
  
