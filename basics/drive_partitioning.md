@@ -1,14 +1,15 @@
-# Setting up a new SSD
+# [Setting up a new SSD](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/installation_guide/s2-diskpartrecommend-x86)
+Red Hat has a really good basic summary.
+
+
 Boot from a Gparted or similar USB stick
 
 First you will need to set up a `GPT` partition table for the whole drive.
 
 
-## LVM
+## [LVM](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/installation_guide/sn-partitioning-lvm)
 - Should be enabled.
 Logical Volume Management makes it possible to change partition sizes on the fly.
-
-
 
 
 ## About [Swap Space](https://opensource.com/article/18/9/swap-space-linux-systems) and [Swap Partitions](https://www.makeuseof.com/tag/swap-partition/)
@@ -25,6 +26,15 @@ Set swappiness to 20.
 ```shell
 sudo sysctl vm.swappiness=20
 ```
+
+### [Sharing a /home folder or similar](https://unix.stackexchange.com/questions/6344/different-linux-distros-sharing-the-same-home-folder)
+- keep /home lightweight - config files and such
+- keep all my files and programs on "/data" 
+
+
+
+
+
 
 #Drive Partitions 250GB
 
