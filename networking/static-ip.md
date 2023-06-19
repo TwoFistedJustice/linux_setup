@@ -94,7 +94,7 @@ I want a static IP address of **192.168.69.007** (because I'm really a British s
 - Note: "manual" is the actual value you want for a static ip.
 
 **Activate the connection** \
-`$ sudo nmcli connection up egd6cdd8-8ewd-8bf8-a0fd-cjkhkiu34f1e`
+`$ sudo nmcli connection up [UUID]`
 
 **Check your work** \
 `$ sudo cat /etc/NetworkManager/system-connections/[network name].nmconnection `
