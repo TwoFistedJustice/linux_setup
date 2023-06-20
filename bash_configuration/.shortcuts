@@ -1,0 +1,75 @@
+List of aliases and functions
+## functions in .bash_functions - call without parentheses
+stats -- displays most used commands
+cdl --  just like 'cd' command but also lists all files in target directory
+
+
+
+## aliases
+
+# Find files
+finder  find a file
+        usage: find [file name]
+
+# History
+histg   display history with search term:
+        usage: histg [keyword]
+
+
+# IP Address
+myip    displays current IP address (not LAN IP)
+
+
+# Bash Shell Manipulation
+
+reload  reload bash configuration files
+
+
+# System Information Display
+aliases     display contents of ~/.bash_aliases
+functions   display contents of ~/.bash_functions
+shortcuts   display synopsis of functions and aliases for this system only
+batrc       displays .bashrc with batcat
+catrc       displays .bashrc with cat
+now         display time and date
+
+
+# Directory Traversal
+..      double dot - go back one directory
+cdr     go to Root directory
+cdu     go to User's home directory
+back    go to previous path location
+
+
+# feline aliases (text display)
+bat     calls batcat to display contents of a file
+        usage: bat [ filename ]
+
+mancat  displays manual for batcat
+
+
+
+# terminal shortcuts
+# type CTRL+L to clear terminal - uses AINSI-C formfeed command \f
+cls     clear screen
+
+# to display system configurations
+path    displays system PATH
+
+# for built in shell commands
+h   displays system help
+
+# Monitor Control
+mon2    rotate monitor 2
+        usage: mon2 [left, right, normal]
+
+mon3    rotate monitor 3
+        usage: mon3 [left, right, normal]
+
+#git
+gits        git status
+gdif        git status -v -v
+git.        git add . (all files)
+gitm        git commit -m
+gitam       git commit -am
+ghist       display git history
