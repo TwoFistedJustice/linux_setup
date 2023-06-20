@@ -8,22 +8,29 @@ alias myip="curl http://ipecho.net/plain; echo"
 
 alias reload="source $HOME/.bashrc"
 
+#output the contents of this file
+alias aliases="batcat ~/.bash_aliases"
+alias functions="batcat ~/.bash_functions"
+alias shortcuts="batcat ~/.shortcuts"
+
+
 # cd
 alias ..="cd .."
 alias cdr="cd /"
 alias cdu="cd ~"
+alias back="cd $OLDPWD"
 
 
-# feline aliases
+# feline aliases (text display)
 alias bat="batcat"
 alias mancat="man batcat"
 alias batrc="batcat $HOME/.bashrc"
 alias catrc="cat $HOME/.bashrc"
 
 
-
-# replace standard commands
-alias df="pydf"
+# terminal shortcuts
+# type CTRL+L to clear terminal - uses AINSI-C formfeed command \f
+alias cls=clear
 
 # to display system configurations
 alias path="echo $PATH"
@@ -37,9 +44,9 @@ alias now='date +"  %-I:%M %P%n%A %-m/%d/%y"'
 
 #env variable shortcuts
 #commented out, find out what current variables are called and modify
-#Left Hand Monitor
+#Samsung 23"
 alias mon2="xrandr --output DP-2-2 --rotate"
-#Right Hand Monitor
+#HP 19"
 alias mon3="xrandr --output DP-2-3 --rotate"
 
 
