@@ -4,12 +4,48 @@ Red Hat has a really good basic summary.
 
 Boot from a Gparted or similar USB stick
 
-First you will need to set up a `GPT` partition table for the whole drive.
+[Part 1: Use Gparted](https://help.ubuntu.com/community/ManualFullSystemEncryption/DetailedProcessPartition)
+1. Set up a `GPT` partition table for the whole drive.
+2. Set up a ESP 
+
+```yaml
+create-as: primary partition
+name: EFI System Partition
+file-system: fat32
+label: ESP
+```
+3. That's it for that site. The rest of the tutorial appears to be superfluous.
+Part 2: Use Kubuntu Installer 
+4. Tell it to use the EFI as EFI
+5. Make a swap
+6. Set a BTRFS partition as /
+
+
 
 
 ## [LVM](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/installation_guide/sn-partitioning-lvm)
 - Should be enabled.
 Logical Volume Management makes it possible to change partition sizes on the fly.
+
+
+## Partitions to set up:
+
+| Designation | Type           | Mount Point | Size | Reason
+| ------------------- | --------------- | ----------- | ------------------- |  ------------------- |
+| /dev/sda1 | fat32 | /boot/efi | 550.00 MiB | boot partition
+| /dev\/sda2 | linuxswap | none | 48 GiB | 1.5x RAM capacity - btrfs needs this to enable sleep
+| /dev/sda3 | btrfs | / | 70% of total capactiy | btrfs can create new subvolumes within this 
+| unallocated | unknown | - | remainder | to enable btrfs to expand and do magic
+
+
+
+## [About Boot Partition](https://www.baeldung.com/linux/boot-partition-necessary)
+To use LVM you must have a /boot partition. So use a /boot
+[File system: FAT32](https://www.rodsbooks.com/efi-bootloaders/principles.html - Rod's Books (under EFI Disk Structures) suggests using FAT32 because EFI requires it.
+He also suggests a size of 550mb to avoid some "mysterious errors"
+
+
+
 
 
 ## About [Swap Space](https://opensource.com/article/18/9/swap-space-linux-systems) and [Swap Partitions](https://www.makeuseof.com/tag/swap-partition/)
