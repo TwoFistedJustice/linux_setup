@@ -6,8 +6,6 @@
 ### Make bootable flash drive
  - see /basics/usb_drives.md
 
-
-
 ### Partition drive
 - see /basics/partitioning.md
 
